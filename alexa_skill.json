@@ -1,0 +1,147 @@
+{
+  "languageModel": {
+    "types": [
+      {
+        "name": "Appliance",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "radio",
+              "synonyms": [
+                "music",
+                "tunes"
+              ]
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "air conditioning",
+              "synonyms": [
+                "air",
+                "AC"
+              ]
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "headlights",
+              "synonyms": [
+                "lights"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Genre",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "rock",
+              "synonyms": [
+                "rock & roll",
+                "rock and roll",
+                "pop"
+              ]
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "classical",
+              "synonyms": [
+                "symphonic"
+              ]
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "rhythm and blues",
+              "synonyms": [
+                "r&b"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "Goodbye",
+        "samples": [
+          "bye",
+          "farewell",
+          "goodbye",
+          "I'm done",
+          "see you later"
+        ],
+        "slots": []
+      },
+      {
+        "name": "Hello",
+        "samples": [
+          "hello",
+          "good morning",
+          "greetings",
+          "hi",
+          "howdy"
+        ],
+        "slots": []
+      },
+      {
+        "name": "SelectMusic",
+        "samples": [
+          "I want {genre}",
+          "Play {genre} please",
+          "{genre}",
+          "Play {genre} on the radio",
+          "{genre} music"
+        ],
+        "slots": [
+          {
+            "name": "genre",
+            "type": "Genre"
+          }
+        ]
+      },
+      {
+        "name": "TurnOn",
+        "samples": [
+          "I need {appliance}",
+          "Play some {appliance}",
+          "Turn on the {appliance}",
+          "turn on",
+          "{appliance} please",
+          "Crank up the {appliance}",
+          "Turn on the {appliance} ",
+          "{appliance} on",
+          "{appliance}"
+        ],
+        "slots": [
+          {
+            "name": "appliance",
+            "type": "Appliance"
+          }
+        ]
+      }
+    ],
+    "invocationName": "car conversation"
+  }
+}
